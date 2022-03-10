@@ -27,25 +27,25 @@
                         <h5>
                             Nome Cognome
                         </h5>
-                        <input class="mt-4" type="text" placeholder="Nome Cognome">
+                        <input id="nomeCognome" class="mt-4" type="text" placeholder="Nome Cognome">
                     </div>
                     <!-- KM -->
                     <div class="col">
                         <h5>
                             Km da percorrere
                         </h5>
-                        <input class="mt-4" type="number" placeholder="Numero Km">
+                        <input id="kilometriSelezionati" class="mt-4" type="number" placeholder="Numero Km">
                     </div>
                     <!-- ETA' -->
                     <div class="col">
                         <h5>
                             Fascia d'età
                         </h5>
-                        <select class="mt-4" name="" id="">
+                        <select id="fasciaEtàSelezionata" class="mt-4" name="" id="">
                             <option selected>Seleziona fascia d'età</option>
-                            <option value="1">Minorenne</option>
-                            <option value="2">Over 65</option>
-                            <option value="2">Altro</option>
+                            <option value="minorenne">Minorenne</option>
+                            <option value="over 65">Over 65</option>
+                            <option value="altro">Altro</option>
                         </select>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
 
             <!-- BOTTONI GENERA // ANNULLA -->
             <div class="mt-5">
-                <button class="btn btn-secondary text-uppercase">
+                <button class="btn btn-secondary text-uppercase" id="genera">
                     genera
                 </button>
                 <button class="btn btn-secondary text-uppercase">
