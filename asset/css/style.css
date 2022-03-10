@@ -21,3 +21,7 @@ h2{
 .ps_color{
     color: rgba(185,20,80,255);
 }
+
+.d-none{
+    display: none;
+}
