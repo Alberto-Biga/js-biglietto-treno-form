@@ -8,10 +8,12 @@ genera.addEventListener("click",
     let nominativo = document.getElementById("nomeCognome")    
     let  km  = document.getElementById("kilometri")
     let eta = document.getElementById("età")
+    let numeroRandom5 = Math.floor(Math.random() * 99999)
+    let numeroRandom1 = Math.floor(Math.random() * 9) + 1
     document.getElementById("nomepasseggero").innerHTML = "<h5>" + nominativo.value + "</h5>"
     document.getElementById("offerta").innerHTML = "<h5>" + eta.value + "</h5>"    
-    document.getElementById("carrozza").innerHTML = "<h5> 5 </h5>"
-    document.getElementById("codicecp").innerHTML = "<h5>"+ "10098" +"</h5>"
+    document.getElementById("carrozza").innerHTML = "<h5>" + numeroRandom1 + "</h5>"
+    document.getElementById("codicecp").innerHTML = "<h5>"+ numeroRandom5 +"</h5>"
 
     let prezzo = km.value * 0.21
     let prezzoMinorenne = ( prezzo - ( prezzo * 0.2 ))
@@ -40,3 +42,5 @@ genera.addEventListener("click",
     }
         }
     );
+
+    
